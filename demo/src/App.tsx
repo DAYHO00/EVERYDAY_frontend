@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+
+  const increase = () => {
+    setCount(count + 1);
+  };
+
+  const logAfter3s = () => {
+    setTimeout(() => {
+      console.log("Count value after 3 seconds:", count);
+      alert(`Count value after 3 seconds: ${count}`);
+    }, 3000);
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div style={{ padding: "2rem" }}>
+      <h2>Closure 실습</h2>
+
+      <p>현재 count: {count}</p>
+
+      <div style={{ display: "flex", gap: "0.5rem", justifyContent: "center" }}>
+        <button onClick={increase}>+1</button>
+        <button onClick={logAfter3s}>3초 뒤 count 출력</button>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+
+      <p style={{ marginTop: "1rem", color: "#666" }}>
+        실험: <b>“3초 뒤 count 출력”</b> 누른 다음, 3초 안에 <b>+1</b>을 여러 번
+        눌러보세요.
+        <br />
+        3초 뒤 출력되는 값이 “내가 기대한 값”과 같은지 확인!
       </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
