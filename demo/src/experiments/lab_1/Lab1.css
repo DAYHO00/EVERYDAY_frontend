@@ -1,0 +1,40 @@
+.lab1 {
+  padding: 16px;
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
+}
+
+.desc {
+  opacity: 0.8;
+  margin: 8px 0 16px;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.stage {
+  border: 1px solid #333;
+  padding: 16px;
+  width: 520px;
+  height: 240px;
+  position: relative;
+}
+
+.box {
+  width: 120px;
+  height: 120px;
+  background: #4f7cff;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  border-radius: 10px;
+}
