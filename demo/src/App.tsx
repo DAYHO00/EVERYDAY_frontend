@@ -1,8 +1,12 @@
 import { useState } from "react";
-import Lab1 from "./experiments/lab_1/Lab1";
+import Lab2 from "./experiments/lab_2/Lab2";
 
 function App() {
-  return <Lab1 />;
+  return (
+    <div className="App">
+      <Lab2 />
+    </div>
+  );
 }
 
 export default App;
