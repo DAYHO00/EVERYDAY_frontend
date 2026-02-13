@@ -1,10 +1,10 @@
 import { useState } from "react";
-import Lab2 from "./experiments/lab_2/Lab2";
+import Lab3 from "./experiments/lab_3/Lab3";
 
 function App() {
   return (
     <div className="App">
-      <Lab2 />
+      <Lab3 />
     </div>
   );
 }
