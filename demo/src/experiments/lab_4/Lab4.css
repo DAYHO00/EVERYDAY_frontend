@@ -1,0 +1,9 @@
+.lab4 {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 520px;
+}
+button {
+  padding: 0.6rem 0.9rem;
+  cursor: pointer;
+}
