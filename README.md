@@ -10,3 +10,4 @@
 - [4] [매일메일] tanstack-query에서 stale time과 gc time의 차이점에 대해서 설명해주세요
 - [5] [매일메일] 이벤트 루프에 대해서 설명해주세요.
 - [6] [매일메일] 리액트의 props와 state에 대해서 설명해주세요.
+- [7] [매일메일] 리액트의 Controlled Component와 Uncontrolled Component의 차이점에 대해서 설명해주세요.
