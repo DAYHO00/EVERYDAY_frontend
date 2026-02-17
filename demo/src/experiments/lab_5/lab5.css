@@ -1,0 +1,16 @@
+.container {
+  display: grid;
+  gap: 1rem;
+  max-width: 520px;
+}
+
+.box {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.hint {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}

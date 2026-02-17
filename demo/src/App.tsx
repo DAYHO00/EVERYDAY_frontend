@@ -1,10 +1,11 @@
 import { useState } from "react";
-import Lab4 from "./experiments/lab_4/Lab4";
+import "./App.css";
+import Lab5 from "./experiments/lab_5/lab5";
 
 function App() {
   return (
     <div className="App" style={{ padding: "1rem" }}>
-      <Lab4 />
+      <Lab5 />
     </div>
   );
 }
