@@ -1,0 +1,33 @@
+.lab6 {
+  padding: 16px;
+  display: grid;
+  gap: 16px;
+  max-width: 720px;
+}
+
+.box {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.box input {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  outline: none;
+}
+
+.box button {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  cursor: pointer;
+}
+
+.hint {
+  font-size: 12px;
+  opacity: 0.7;
+}
