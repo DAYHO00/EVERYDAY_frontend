@@ -1,0 +1,10 @@
+.page {
+  padding: 16px;
+}
+
+.box {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
