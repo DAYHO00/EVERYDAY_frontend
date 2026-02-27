@@ -1,0 +1,90 @@
+.lab8 {
+  padding: 16px;
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    "Noto Sans KR",
+    sans-serif;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 12px 0 16px;
+}
+
+.controls button {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.controls button.active {
+  border-color: #444;
+  font-weight: 700;
+}
+
+.controls button.run {
+  margin-left: 8px;
+  border-color: #111;
+}
+
+.stage {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.label {
+  font-size: 14px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.box {
+  height: 140px;
+  width: 200px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  display: grid;
+  place-items: center;
+  user-select: none;
+  background: rgba(100, 149, 237, 0.25);
+  /* 애니메이션 느낌을 위해 transition 넣기 */
+  transition:
+    width 200ms ease,
+    background-color 200ms ease,
+    transform 200ms ease;
+}
+
+/* 모드별로 시각적으로도 구분 */
+.box.layout {
+  outline: 2px dashed rgba(0, 0, 0, 0.2);
+}
+
+.box.paint {
+  outline: 2px dashed rgba(255, 140, 0, 0.35);
+}
+
+.box.composite {
+  outline: 2px dashed rgba(34, 139, 34, 0.35);
+  will-change: transform; /* 컴포지팅 실험에 도움 */
+}
+
+.info {
+  max-width: 520px;
+  font-size: 14px;
+  line-height: 1.6;
+}
